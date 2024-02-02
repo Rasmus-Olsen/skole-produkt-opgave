@@ -1,0 +1,204 @@
+/*
+* Reset of styling
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+html {
+  --light-grey: #f6f6f6;
+  --black: #09030f;
+}
+
+body {
+  background: var(--light-grey);
+  color: var(--black);
+}
+
+/*
+* Header
+*/
+header {
+  position: sticky;
+  top: -1px;
+  z-index: 10;
+  background: var(--light-grey);
+}
+
+header a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+header nav {
+  display: flex;
+  padding: 20px 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  gap: 50px;
+}
+
+header nav ul li {
+  margin: auto;
+}
+
+header nav ul li a:hover {
+  opacity: 0.6;
+}
+
+h1 {
+  font-size: 46px;
+  margin-bottom: 40px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+}
+
+p,
+a {
+  font-size: 18px;
+  color: var(--black);
+}
+
+a {
+  transition: opacity 0.2s;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+.btn {
+  background: #000;
+
+  text-decoration: none;
+
+  color: var(--light-grey);
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+main {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+/*
+* Categories
+*/
+.cagegory {
+  padding: 60px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/billede1.webp);
+  border-radius: 16px;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--light-grey);
+}
+
+/*
+* Product list
+*/
+a.product {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.product-list a {
+  text-decoration: none;
+}
+
+.price-sale {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.type-brand {
+  display: flex;
+  text-align: center;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.price {
+  display: inline-block;
+}
+
+/*
+* onSale
+*/
+article.onSale {
+  display: flex;
+  align-items: center;
+}
+.sale {
+  display: none;
+}
+
+article.onSale .sale {
+  font-size: 20px;
+  display: inline-block;
+  color: #000;
+  margin-left: auto;
+}
+
+/*
+* Sold out
+*/
+article.soldOut {
+  position: relative;
+}
+.product-list article.soldOut img {
+  opacity: 0.4;
+}
+
+article.soldOut .sold {
+  display: block;
+  font-size: 20px;
+  background: var(--black);
+  color: var(--light-grey);
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.sold {
+  display: none;
+}
