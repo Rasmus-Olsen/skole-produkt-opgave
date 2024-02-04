@@ -11,7 +11,7 @@ function dateRecevied(data) {
 }
 
 function showProduct(product) {
-  console.log("product");
+  console.log(product);
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
 
