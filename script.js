@@ -21,6 +21,8 @@ function showProduct(product) {
 
   clone.querySelector(".brandname").textContent = product.brandname;
 
+  clone.querySelector(".season span").textContent = product.season;
+
   clone.querySelector(".type").textContent = product.articletype;
 
   clone.querySelector(".sale span").textContent = product.discount;
