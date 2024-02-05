@@ -148,12 +148,6 @@ a.product {
   display: flex;
   align-items: center;
 }
-.type-brand {
-  display: flex;
-  text-align: center;
-  gap: 5px;
-  margin-top: 8px;
-}
 
 .price {
   display: inline-block;
@@ -173,8 +167,8 @@ article.onSale {
 article.onSale .sale {
   font-size: 20px;
   display: inline-block;
-  color: #000;
   margin-left: auto;
+  color: red;
 }
 
 /*

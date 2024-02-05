@@ -25,11 +25,7 @@ function showProduct(product) {
 
   clone.querySelector(".sale span").textContent = product.discount;
 
-  const productid = product.id;
-
-  const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${productid}.webp`;
-
-  clone.querySelector("img").src = imagePath;
+  clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   //Product on sale
   if (product.discount) {
