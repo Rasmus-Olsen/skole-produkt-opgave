@@ -64,6 +64,10 @@ h1 {
   margin-bottom: 40px;
 }
 
+h1.product {
+  margin: 0;
+}
+
 h2,
 .h2 {
   font-size: 32px;
@@ -156,7 +160,16 @@ a.product {
 .season {
   font-weight: bold;
 }
+
 .price {
+  font-weight: bold;
+}
+
+.color {
+  font-weight: bold;
+}
+
+.category {
   font-weight: bold;
 }
 
@@ -165,6 +178,14 @@ a.product {
 }
 
 .price span {
+  font-weight: normal;
+}
+
+.color span {
+  font-weight: normal;
+}
+
+.category span {
   font-weight: normal;
 }
 
@@ -210,4 +231,11 @@ article.soldOut .sold {
 
 .sold {
   display: none;
+}
+
+/* 
+* Single product
+*/
+h2 {
+  margin: 20px 0;
 }

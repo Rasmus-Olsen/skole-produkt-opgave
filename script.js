@@ -14,6 +14,7 @@ function showProduct(product) {
   console.log(product);
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
+  const id = product.id;
 
   clone.querySelector("h2").textContent = product.productdisplayname;
 
@@ -27,7 +28,9 @@ function showProduct(product) {
 
   clone.querySelector(".sale span").textContent = product.discount;
 
-  clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  clone.querySelector(".oneProduct").href = `product.html?ProductId=${product.id}`;
+
+  clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
 
   //Product on sale
   if (product.discount) {
