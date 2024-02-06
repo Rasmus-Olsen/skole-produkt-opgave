@@ -30,7 +30,7 @@ function showProduct(product) {
 
   clone.querySelector(".sale span").textContent = product.discount;
 
-  clone.querySelector(".oneProduct").href = `product.html?ProductId=${product.id}`;
+  clone.querySelector(".oneProduct").href = `product.html?ProductId=${id}`;
 
   clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${id}.webp`;
 
